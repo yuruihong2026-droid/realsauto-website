@@ -91,7 +91,7 @@ if(form){form.addEventListener('submit',async(e)=>{
   const btn=form.querySelector('button[type="submit"]');
   if(form.querySelector('input[name="access_key"]').value.startsWith('YOUR_')){
     status.style.display='block';
-    status.textContent='Form service key not configured yet. Please contact us directly at yu.ruihong@tjlanyu.com.cn';
+    status.textContent='Form service key not configured yet. Please contact us directly at ryan@realsauto.com';
     return;
   }
   btn.disabled=true; btn.textContent='Sending...';
@@ -110,11 +110,11 @@ if(form){form.addEventListener('submit',async(e)=>{
       form.reset();
     }else{
       status.style.display='block'; status.style.color='#d42020';
-      status.textContent='There was an error sending your message. Please try again or email yu.ruihong@tjlanyu.com.cn';
+      status.textContent='There was an error sending your message. Please try again or email ryan@realsauto.com';
     }
   }catch(err){
     status.style.display='block'; status.style.color='#d42020';
-    status.textContent='Network error. Please try again or email yu.ruihong@tjlanyu.com.cn';
+    status.textContent='Network error. Please try again or email ryan@realsauto.com';
   }
   btn.disabled=false; btn.textContent='Submit Inquiry';
 })}
