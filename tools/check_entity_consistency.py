@@ -70,6 +70,9 @@ def has_unattributed_iatf_claim(text: str) -> bool:
         r"REALS\s+(?:is|are|has|holds|operates)[^.]{0,100}IATF",
         r"IATF[^.]{0,100}[ -]certified[^.]{0,80}(?:REALS|our company)",
         r"(?:our|REALS(?:'s)?)\s+(?:own\s+)?(?:IATF[^.]{0,50})?(?:factory|facilities)",
+        r"REALS automotive wire harness tape manufacturing capability",
+        r"manufacturing base",
+        r"see how we manufacture",
     )
     return any(re.search(pattern, normalized, re.IGNORECASE) for pattern in prohibited)
 
