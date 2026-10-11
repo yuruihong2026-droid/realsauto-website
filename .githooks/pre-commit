@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+
+if git diff --cached --name-only --diff-filter=ACMR | grep -Eq '(^|/)[^/]+\.html$'; then
+  python3 tools/update_sitemap_lastmod.py
+  git add sitemap.xml
+  python3 tools/update_sitemap_lastmod.py --check
+fi
