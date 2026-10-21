@@ -95,7 +95,13 @@ if(form){form.addEventListener('submit',async(e)=>{
     return;
   }
   btn.disabled=true; btn.textContent='Sending...';
-  if(typeof window.gtag==='function') window.gtag('event','form_submit_attempt',{product:form.querySelector('#product')?.value || 'not_set'});
+  const product=form.querySelector('[name="product"]')?.value || 'General inquiry';
+  const stage=form.querySelector('[name="purchase_stage"]')?.value || '';
+  const quantity=form.querySelector('[name="quantity"]')?.value.trim() || '';
+  form.querySelector('input[name="subject"]').value=`[WEB-INQUIRY] ${product} - ${form.querySelector('[name="name"]')?.value.trim() || 'Unknown'}`;
+  const source=form.querySelector('input[name="source"]');
+  if(source) source.value=window.location.pathname;
+  if(typeof window.gtag==='function') window.gtag('event','form_submit_attempt',{product});
   const data=new FormData(form);
   data.append('botcheck','');
   data.append('landing_page',window.location.href);
@@ -104,7 +110,10 @@ if(form){form.addEventListener('submit',async(e)=>{
     const res=await fetch(form.action,{method:'POST',body:data,headers:{'Accept':'application/json'}});
     const json=await res.json();
     if(json.success){
-      if(typeof window.gtag==='function') window.gtag('event','generate_lead',{product:form.querySelector('#product')?.value || 'not_set'});
+      if(typeof window.gtag==='function'){
+        window.gtag('event','generate_lead',{product});
+        window.gtag('event','inquiry_submit',{product,stage,has_quantity:Boolean(quantity)});
+      }
       status.style.display='block'; status.style.color='var(--green)';
       status.textContent='Thank you! Your inquiry has been sent. We will reply within one business day. For urgent requests, please use WhatsApp.';
       form.reset();
@@ -123,6 +132,9 @@ const fallbackEmail='yu.ruihong@tjlanyu.com.cn';
 const web3FormsKey='3834b9e2-8924-48f9-9637-74b026008419';
 
 async function submitWeb3Form(formElement){
+  const product=formElement.querySelector('[name="product"]')?.value||'General inquiry';
+  const name=formElement.querySelector('[name="name"]')?.value.trim()||'Unknown';
+  formElement.querySelector('input[name="subject"]').value=`[WEB-INQUIRY] ${product} - ${name}`;
   const data=new FormData(formElement);
   data.set('access_key',web3FormsKey);
   data.set('source',window.location.pathname);
@@ -144,8 +156,10 @@ document.querySelectorAll('.product-inquiry-form').forEach(inquiryForm=>{
     button.disabled=true; button.textContent='Sending...';
     try{
       await submitWeb3Form(inquiryForm);
-      const product=inquiryForm.querySelector('input[name="product"]')?.value||'General inquiry';
-      if(typeof window.gtag==='function') window.gtag('event','inquiry_submit',{product});
+      const product=inquiryForm.querySelector('[name="product"]')?.value||'General inquiry';
+      const stage=inquiryForm.querySelector('[name="purchase_stage"]')?.value||'';
+      const has_quantity=Boolean(inquiryForm.querySelector('[name="quantity"]')?.value.trim());
+      if(typeof window.gtag==='function') window.gtag('event','inquiry_submit',{product,stage,has_quantity});
       inquiryForm.reset();
       if(source) source.value=window.location.pathname;
       status.style.display='block'; status.style.color='var(--green)';
