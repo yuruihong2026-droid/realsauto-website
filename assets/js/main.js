@@ -192,7 +192,12 @@ document.querySelectorAll('.video-frame').forEach(async frame=>{
   try{
     const response=await fetch(source.src,{method:'HEAD',cache:'no-store'});
     if(!response.ok) return;
-    frame.classList.add('is-ready'); video.load();
+    frame.classList.add('is-ready');
+    const cover=frame.querySelector('.video-cover');
+    cover?.addEventListener('click',()=>{
+      cover.hidden=true;
+      video.play();
+    });
   }catch(error){/* The poster placeholder remains visible until the MP4 exists. */}
   video.addEventListener('play',()=>{
     if(video.dataset.playTracked) return;
