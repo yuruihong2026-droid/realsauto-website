@@ -118,3 +118,85 @@ if(form){form.addEventListener('submit',async(e)=>{
   }
   btn.disabled=false; btn.textContent='Submit Inquiry';
 })}
+
+const fallbackEmail='yu.ruihong@tjlanyu.com.cn';
+const web3FormsKey='3834b9e2-8924-48f9-9637-74b026008419';
+
+async function submitWeb3Form(formElement){
+  const data=new FormData(formElement);
+  data.set('access_key',web3FormsKey);
+  data.set('source',window.location.pathname);
+  data.append('botcheck','');
+  const response=await fetch('https://api.web3forms.com/submit',{method:'POST',body:data,headers:{Accept:'application/json'}});
+  const result=await response.json();
+  if(!response.ok||!result.success) throw new Error('Web3Forms submission failed');
+  return result;
+}
+
+document.querySelectorAll('.product-inquiry-form').forEach(inquiryForm=>{
+  const source=inquiryForm.querySelector('input[name="source"]');
+  if(source) source.value=window.location.pathname;
+  inquiryForm.addEventListener('submit',async event=>{
+    event.preventDefault();
+    const button=inquiryForm.querySelector('button[type="submit"]');
+    const status=inquiryForm.querySelector('.form-status');
+    const originalLabel=button.textContent;
+    button.disabled=true; button.textContent='Sending...';
+    try{
+      await submitWeb3Form(inquiryForm);
+      const product=inquiryForm.querySelector('input[name="product"]')?.value||'General inquiry';
+      if(typeof window.gtag==='function') window.gtag('event','inquiry_submit',{product});
+      inquiryForm.reset();
+      if(source) source.value=window.location.pathname;
+      status.style.display='block'; status.style.color='var(--green)';
+      status.textContent='Thanks — we reply within 1 business day.';
+    }catch(error){
+      status.style.display='block'; status.style.color='#ff8b8b';
+      status.innerHTML=`Sorry, the form could not be sent. Please email <a href="mailto:${fallbackEmail}">${fallbackEmail}</a>.`;
+    }finally{button.disabled=false;button.textContent=originalLabel}
+  });
+});
+
+document.querySelectorAll('.tds-trigger[data-dialog]').forEach(trigger=>{
+  trigger.addEventListener('click',()=>document.getElementById(trigger.dataset.dialog)?.showModal());
+});
+document.querySelectorAll('.tds-dialog').forEach(dialog=>{
+  dialog.querySelector('.tds-close')?.addEventListener('click',()=>dialog.close());
+  dialog.addEventListener('click',event=>{if(event.target===dialog) dialog.close()});
+});
+document.querySelectorAll('.tds-form').forEach(tdsForm=>{
+  tdsForm.addEventListener('submit',async event=>{
+    event.preventDefault();
+    const button=tdsForm.querySelector('button[type="submit"]');
+    const status=tdsForm.querySelector('.tds-confirmation');
+    const originalLabel=button.textContent;
+    button.disabled=true; button.textContent='Sending...';
+    try{
+      await submitWeb3Form(tdsForm);
+      const product=tdsForm.querySelector('input[name="product"]')?.value||'not_set';
+      if(typeof window.gtag==='function') window.gtag('event','tds_request',{product});
+      status.textContent='We received your request and will reply within 24 hours. Your download is starting.';
+      const download=document.createElement('a');
+      download.href=tdsForm.dataset.pdf; download.download=''; document.body.appendChild(download); download.click(); download.remove();
+      tdsForm.reset();
+    }catch(error){
+      status.innerHTML=`Sorry, the form could not be sent. Please email <a href="mailto:${fallbackEmail}">${fallbackEmail}</a>.`;
+    }finally{button.disabled=false;button.textContent=originalLabel}
+  });
+});
+
+document.querySelectorAll('.video-frame').forEach(async frame=>{
+  const video=frame.querySelector('video');
+  const source=video?.querySelector('source');
+  if(!video||!source) return;
+  try{
+    const response=await fetch(source.src,{method:'HEAD',cache:'no-store'});
+    if(!response.ok) return;
+    frame.classList.add('is-ready'); video.load();
+  }catch(error){/* The poster placeholder remains visible until the MP4 exists. */}
+  video.addEventListener('play',()=>{
+    if(video.dataset.playTracked) return;
+    video.dataset.playTracked='true';
+    if(typeof window.gtag==='function') window.gtag('event','video_play',{video_name:video.dataset.videoName||source.src.split('/').pop()});
+  });
+});
