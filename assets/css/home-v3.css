@@ -19,7 +19,7 @@
 .hp3-btn:hover{filter:brightness(1.07)}
 .hp3-ghost{border:1px solid rgba(255,255,255,.55);color:#fff;padding:12px 22px;border-radius:4px;font-size:13px;font-weight:500;text-decoration:none}
 .hp3-ghost:hover{border-color:#8ee83f;color:#8ee83f}
-.hp3-hero-right{display:grid;grid-template-columns:62% 38%;align-items:start;padding-top:2px}
+.hp3-hero-right{display:grid;grid-template-columns:70% 30%;align-items:start;padding-top:2px}
 .hp3-label{text-decoration:none;color:#fff;padding:0 0 0 6px;display:block}
 .hp3-label b{display:block;font-size:19px;font-weight:700;letter-spacing:.5px;line-height:1.2}
 .hp3-label span{display:block;font-size:10.5px;color:#cfdde7;margin-top:7px;letter-spacing:.02em;line-height:1.7}
@@ -63,7 +63,7 @@
  .hp3-hero-inner{flex-direction:column;padding:28px 18px 30px}
  .hp3-h1{font-size:30px}.hp3-h1sub{font-size:16px}
  .hp3-labels{padding-top:18px}
- .hp3-label{padding:0 14px 0 0}
+ .hp3-label{text-decoration:none;color:#fff;padding:0 0 0 6px;display:block}
  .hp3-cards{grid-template-columns:repeat(2,1fr)}
  .hp3-trust{grid-template-columns:1fr 1fr}
  .hp3-trust div:nth-child(2n){border-right:0}
@@ -103,7 +103,7 @@
 
 @media(max-width:900px){
  .hp3-hero-inner{grid-template-columns:1fr!important;padding:18px 18px 26px}
- .hp3-hero-right{display:none}
+ .hp3-hero-right{display:grid;grid-template-columns:70% 30%;align-items:start;padding-top:2px}
  .hp3-copy{max-width:100%}
  .hp3-h1{font-size:27px!important;line-height:1.08}
  .hp3-h1sub{font-size:15px}
