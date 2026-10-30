@@ -1,15 +1,15 @@
 /* ===== Homepage v3 — matches approved design (2026-10-29) ===== */
 .hp3{background:#060f16;color:#eef4f8;font-family:Inter,-apple-system,"Helvetica Neue",Arial,sans-serif}
 .hp3-wrap{max-width:1500px;margin:0 auto;padding:0 34px}
-.hp3-hero{position:relative;min-height:352px;padding-top:82px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.07)}
+.hp3-hero{position:relative;min-height:400px;padding-top:82px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.07)}
 .hp3-hero-bg{position:absolute;inset:0;background:#050d14}
-.hp3-hero-bg .l{position:absolute;inset:0 0 0 0;background:url('../img/hero-battery-band.webp') 42% 50%/132% auto no-repeat}
-.hp3-hero-bg .r{position:absolute;inset:0;background:url('../img/app-assembly.webp') 58% 50%/cover no-repeat;clip-path:polygon(45% 0,100% 0,100% 100%,57% 100%)}
-.hp3-hero-bg .beam{position:absolute;top:-15%;left:50.2%;width:64px;height:140%;transform:rotate(10.5deg);background:linear-gradient(90deg,rgba(41,168,224,0),rgba(180,240,255,.95) 46%,rgba(96,205,255,.55) 58%,rgba(41,168,224,0));filter:blur(6px)}
-.hp3-hero-bg .seam{position:absolute;inset:0;background:linear-gradient(100deg,rgba(4,12,18,.55) 44%,rgba(4,12,18,0) 52%,rgba(4,12,18,0) 58%,rgba(4,12,18,.35) 66%)}
-.hp3-hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,18,.95) 0%,rgba(4,12,18,.90) 27%,rgba(4,12,18,.34) 46%,rgba(4,12,18,.18) 68%,rgba(4,12,18,.45) 100%)}
-.hp3-hero-inner{position:relative;z-index:2;max-width:1500px;margin:0 auto;padding:26px 34px 34px;display:grid;grid-template-columns:37% 63%;gap:24px;align-items:start}
-.hp3-copy{max-width:560px}
+.hp3-hero-bg .l{position:absolute;inset:0;background:url('../img/hero-battery-3d.webp') 50% 55%/cover no-repeat;filter:brightness(1.45) contrast(1.04)}
+.hp3-hero-bg .r{position:absolute;inset:0;background:url('../img/hero-harness-3d.webp') 45% 55%/cover no-repeat;clip-path:polygon(52% 0,100% 0,100% 100%,64% 100%)}
+.hp3-hero-bg .beam{position:absolute;top:-15%;left:57.4%;width:64px;height:140%;transform:rotate(10.5deg);background:linear-gradient(90deg,rgba(41,168,224,0),rgba(180,240,255,.95) 46%,rgba(96,205,255,.55) 58%,rgba(41,168,224,0));filter:blur(6px)}
+.hp3-hero-bg .seam{position:absolute;inset:0;background:linear-gradient(100deg,rgba(4,12,18,.45) 42%,rgba(4,12,18,0) 51%,rgba(4,12,18,0) 60%,rgba(4,12,18,.28) 68%)}
+.hp3-hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,18,.92) 0%,rgba(4,12,18,.80) 24%,rgba(4,12,18,.18) 42%,rgba(4,12,18,.06) 62%,rgba(4,12,18,.10) 78%,rgba(4,12,18,.40) 100%)}
+.hp3-hero-inner{position:relative;z-index:2;max-width:1500px;margin:0 auto;padding:26px 34px 34px;display:grid;grid-template-columns:34% 66%;gap:24px;align-items:start}
+.hp3-copy{max-width:505px}
 .hp3-h1{font-size:44px;line-height:1.12;font-weight:600;letter-spacing:-.6px;color:#fff}
 .hp3-h1 em{font-style:normal;color:#8ee83f;font-weight:700}
 .hp3-h1sub{font-size:22px;font-weight:600;color:#fff;margin-top:8px;line-height:1.25}
@@ -19,7 +19,7 @@
 .hp3-btn:hover{filter:brightness(1.07)}
 .hp3-ghost{border:1px solid rgba(255,255,255,.55);color:#fff;padding:12px 22px;border-radius:4px;font-size:13px;font-weight:500;text-decoration:none}
 .hp3-ghost:hover{border-color:#8ee83f;color:#8ee83f}
-.hp3-hero-right{display:grid;grid-template-columns:58% 42%;align-items:start;padding-top:2px}
+.hp3-hero-right{display:grid;grid-template-columns:62% 38%;align-items:start;padding-top:2px}
 .hp3-label{text-decoration:none;color:#fff;padding:0 0 0 6px;display:block}
 .hp3-label b{display:block;font-size:19px;font-weight:700;letter-spacing:.5px;line-height:1.2}
 .hp3-label span{display:block;font-size:10.5px;color:#cfdde7;margin-top:7px;letter-spacing:.02em;line-height:1.7}
@@ -78,7 +78,7 @@
 @media(max-width:1240px){.site-header .desktop-nav{gap:14px}.site-header .desktop-nav a{font-size:10.8px}}
 .hp3-hero-bg .xray{position:absolute;inset:0 43% 0 0;background-image:linear-gradient(rgba(120,220,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(120,220,255,.09) 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(90deg,rgba(0,0,0,.75),rgba(0,0,0,.15));pointer-events:none}
 
-.hp3-h1{font-size:clamp(26px,2.5vw,38px)!important;line-height:1.06}
+.hp3-h1{font-size:clamp(24px,2.35vw,36px)!important;line-height:1.06}
 
 .hp3-thumb{height:74px}
 .hp3-card span{font-size:10.4px;line-height:1.4}
@@ -91,3 +91,6 @@
 
 .hp3-panel.four .hp3-cards{grid-template-columns:repeat(4,minmax(0,1fr))}
 .hp3-panel.four .hp3-thumb{height:86px}
+
+.hp3-btns{flex-wrap:nowrap;gap:10px}
+.hp3-btn,.hp3-ghost{white-space:nowrap;font-size:12px;padding:12px 16px}
