@@ -1,0 +1,134 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>REALS Homepage Layout v1</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#050e15;color:#eaf1f6;font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;line-height:1.5}
+.wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav .logo{font-size:26px;font-weight:800;letter-spacing:2px}
+.nav .logo small{display:block;font-size:8px;letter-spacing:2.4px;color:#8aa0b2;font-weight:500;margin-top:2px}
+.menu{display:flex;gap:26px;font-size:12px;letter-spacing:.14em;color:#c8d6e0}
+.menu b{color:#fff;border-bottom:2px solid #8ef04b;padding-bottom:24px;font-weight:600}
+.btn{background:#8ef04b;color:#08140a;padding:12px 20px;font-size:11px;font-weight:800;letter-spacing:.12em;text-decoration:none}
+.hero{display:grid;grid-template-columns:47% 53%;gap:26px;padding:52px 0 44px;align-items:center}
+h1{font-size:52px;line-height:1.06;font-weight:800;letter-spacing:-1px}
+h1 em{font-style:normal;color:#8ef04b}
+.sub{margin-top:18px;font-size:15px;color:#b7c7d3;max-width:430px}
+.cta{display:flex;gap:12px;margin-top:28px}
+.ghost{border:1px solid rgba(255,255,255,.35);color:#fff;padding:12px 20px;font-size:11px;font-weight:700;letter-spacing:.12em;text-decoration:none}
+.stats{display:flex;gap:30px;margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1)}
+.stats b{display:block;font-size:22px;color:#fff}
+.stats span{font-size:10px;letter-spacing:.12em;color:#7f95a5}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:2px;height:400px}
+.ph{position:relative;background-size:cover;background-position:center;display:flex;align-items:flex-start;padding:18px}
+.ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,12,20,.15),rgba(3,12,20,.75))}
+.ph span{position:relative;z-index:2;font-size:13px;font-weight:800;letter-spacing:.1em}
+.ph small{display:block;font-size:10px;color:#cfe0ea;font-weight:500;margin-top:6px;letter-spacing:.04em}
+.band{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+.band div{padding:18px 22px;font-size:10.5px;letter-spacing:.1em;color:#9fb3c2;border-right:1px solid rgba(255,255,255,.06)}
+.band b{color:#fff}
+section{padding:56px 0}
+.sechead{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:22px}
+h2{font-size:24px;letter-spacing:.02em}
+.sechead p{font-size:12.5px;color:#8fa5b4;margin-top:6px}
+.view{font-size:11px;letter-spacing:.12em;color:#8ef04b;text-decoration:none;border:1px solid rgba(142,240,75,.4);padding:9px 14px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#08151f;border:1px solid rgba(255,255,255,.07)}
+.card img{width:100%;height:150px;object-fit:cover;display:block}
+.card .body{padding:14px 14px 18px}
+.card b{font-size:13px;display:block;line-height:1.3}
+.card span{font-size:10.5px;color:#88a0b0;display:block;margin-top:6px}
+.tag{position:absolute;margin:10px;font-size:8.5px;letter-spacing:.1em;background:rgba(0,0,0,.65);padding:4px 7px;border:1px solid rgba(255,255,255,.25)}
+.cardwrap{position:relative}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{border-left:2px solid #8ef04b;padding:6px 0 6px 16px}
+.step b{font-size:12px;letter-spacing:.1em;display:block}
+.step span{font-size:11.5px;color:#93a9b8;display:block;margin-top:8px}
+.apps{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.apps a{position:relative;height:190px;background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:18px;text-decoration:none;color:#fff;font-size:12px;font-weight:700;letter-spacing:.08em}
+.apps a:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.8))}
+.apps a span{position:relative;z-index:2}
+.ctaband{background:linear-gradient(90deg,#0a1a13,#050e15);border:1px solid rgba(142,240,75,.25);padding:34px 38px;display:flex;justify-content:space-between;align-items:center}
+.ctaband h3{font-size:22px}
+.ctaband p{font-size:12.5px;color:#93a9b8;margin-top:8px}
+footer{border-top:1px solid rgba(255,255,255,.08);padding:26px 0 40px;font-size:11px;color:#7d93a3;display:flex;justify-content:space-between}
+.note{font-size:10.5px;color:#6b8090;padding:10px 0 0}
+</style></head><body>
+<div class="wrap">
+ <div class="nav">
+  <div class="logo">REALS<small>AUTOMOTIVE PROTECTION SOLUTIONS</small></div>
+  <div class="menu"><b>HOME</b><span>BATTERY PROTECTION</span><span>WIRE HARNESS</span><span>PRODUCTS</span><span>APPLICATIONS</span><span>ABOUT</span><span>SUPPORT</span></div>
+  <a class="btn" href="#">REQUEST A QUOTE</a>
+ </div>
+
+ <div class="hero">
+  <div>
+   <h1>ADVANCED<br>AUTOMOTIVE<br><em>PROTECTION</em> MATERIALS</h1>
+   <p class="sub">Insulation, cushioning and sealing for EV battery systems, plus established wire harness protection materials for automotive production.</p>
+   <div class="cta"><a class="btn" href="#">EXPLORE BATTERY MATERIALS →</a><a class="ghost" href="#">WIRE HARNESS →</a></div>
+   <div class="stats">
+    <div><b>10,000 m²</b><span>TWO PLANTS</span></div>
+    <div><b>50+</b><span>MACHINES</span></div>
+    <div><b>1M m²</b><span>MONTHLY CAPACITY</span></div>
+   </div>
+  </div>
+  <div class="photos">
+   <a class="ph" href="#" style="background-image:url('https://www.realsauto.com/assets/img/app-ev-battery.webp')"><span>BATTERY PROTECTION<small>Insulation · Cushioning · Sealing</small></span></a>
+   <a class="ph" href="#" style="background-image:url('https://www.realsauto.com/assets/img/app-assembly.webp')"><span>WIRE HARNESS PROTECTION<small>Noise · Abrasion · Thermal</small></span></a>
+  </div>
+ </div>
+</div>
+
+<div class="wrap"><div class="band">
+ <div><b>◈</b> IATF 16949 · ISO 9001</div><div><b>◈</b> RoHS / REACH compliant</div><div><b>◈</b> Custom slitting &amp; die-cutting</div><div><b>◈</b> Export B2B support</div>
+</div></div>
+
+<div class="wrap" style="padding-top:56px">
+ <div class="sechead"><div><h2>BATTERY PROTECTION MATERIALS</h2><p>Custom development for EV battery systems — supplied through qualified manufacturing partners</p></div><a class="view" href="#">VIEW MORE →</a></div>
+ <div class="grid4">
+  <div class="card cardwrap"><span class="tag">CONCEPT</span><img src="https://www.realsauto.com/assets/img/battery-insulation-tapes-concept.webp"><div class="body"><b>High Voltage Insulation Tapes</b><span>PET / PI · to your drawing</span></div></div>
+  <div class="card cardwrap"><span class="tag">CONCEPT</span><img src="https://www.realsauto.com/assets/img/battery-diecut-insulation-concept.webp"><div class="body"><b>Insulation Films &amp; Die-Cut Parts</b><span>Application-driven geometry</span></div></div>
+  <div class="card cardwrap"><span class="tag">CONCEPT</span><img src="https://www.realsauto.com/assets/img/battery-compression-pads-concept.webp"><div class="body"><b>Cell Compression Pads</b><span>Under material validation</span></div></div>
+  <div class="card cardwrap"><span class="tag">CONCEPT</span><img src="https://www.realsauto.com/assets/img/battery-sealing-gaskets-concept.webp"><div class="body"><b>Pack Sealing Gaskets</b><span>Custom development</span></div></div>
+ </div>
+</div>
+
+<div class="wrap" style="padding-top:56px">
+ <div class="sechead"><div><h2>WIRE HARNESS PROTECTION</h2><p>Volume production materials from our own plants in Tianjin and Dongguan</p></div><a class="view" href="#">VIEW MORE →</a></div>
+ <div class="grid4">
+  <div class="card"><img src="https://www.realsauto.com/assets/img/ly6531-fleece.webp"><div class="body"><b>Automotive Fleece Tape</b><span>Noise reduction</span></div></div>
+  <div class="card"><img src="https://www.realsauto.com/assets/img/ly6524-fabric.webp"><div class="body"><b>Cloth Base Tape</b><span>Abrasion resistance</span></div></div>
+  <div class="card"><img src="https://www.realsauto.com/assets/img/ly6632-foil.webp"><div class="body"><b>Aluminum Foil Tape</b><span>Thermal protection</span></div></div>
+  <div class="card"><img src="https://www.realsauto.com/assets/img/sleeving.webp"><div class="body"><b>Protective Sleeving</b><span>Harness protection</span></div></div>
+ </div>
+</div>
+
+<div class="wrap" style="padding-top:56px">
+ <div class="sechead"><div><h2>HOW WE WORK</h2><p>From drawing to production in four steps</p></div></div>
+ <div class="steps">
+  <div class="step"><b>01 SEND DRAWING</b><span>Customer drawing, spec sheet or sample in hand.</span></div>
+  <div class="step"><b>02 SPEC CONFIRM</b><span>Material, thickness, width and tolerance confirmed.</span></div>
+  <div class="step"><b>03 SAMPLE</b><span>Slit or die-cut samples for your validation.</span></div>
+  <div class="step"><b>04 PRODUCTION</b><span>Batch production and delivery, with documentation.</span></div>
+ </div>
+</div>
+
+<div class="wrap" style="padding-top:56px">
+ <div class="sechead"><div><h2>APPLICATIONS</h2><p>Where our materials go</p></div></div>
+ <div class="apps">
+  <a href="#" style="background-image:url('https://www.realsauto.com/assets/img/app-ev-battery.webp')"><span>EV BATTERY SYSTEMS →</span></a>
+  <a href="#" style="background-image:url('https://www.realsauto.com/assets/img/app-engine.webp')"><span>HIGH VOLTAGE ROUTING →</span></a>
+  <a href="#" style="background-image:url('https://www.realsauto.com/assets/img/app-assembly.webp')"><span>HARNESS ASSEMBLY →</span></a>
+  <a href="#" style="background-image:url('https://www.realsauto.com/assets/img/factory-floor.webp')"><span>CUSTOM MANUFACTURING →</span></a>
+ </div>
+</div>
+
+<div class="wrap" style="padding:56px 28px 0">
+ <div class="ctaband">
+  <div><h3>Send your drawing or specification</h3><p>We reply within one business day with a material proposal and sample plan.</p></div>
+  <a class="btn" href="#">REQUEST A QUOTE →</a>
+ </div>
+ <div class="note">Battery materials are supplied through qualified manufacturing partners to REALS specification; concept images are illustrative.</div>
+</div>
+
+<div class="wrap"><footer><span>REALS Automotive Electronics Co., Ltd. · Tianjin &amp; Dongguan, China</span><span>ryan@realsauto.com · WhatsApp +86 132 0766 4600</span></footer></div>
+</body></html>
