@@ -5,7 +5,7 @@
 .hp3-hero-bg{position:absolute;inset:0;background:#050d14}
 .hp3-hero-bg .l{position:absolute;inset:0 0 0 0;background:url('../img/hero-battery-band.webp') 42% 50%/132% auto no-repeat}
 .hp3-hero-bg .r{position:absolute;inset:0;background:url('../img/app-assembly.webp') 58% 50%/cover no-repeat;clip-path:polygon(45% 0,100% 0,100% 100%,57% 100%)}
-.hp3-hero-bg .beam{position:absolute;top:-15%;left:49.4%;width:120px;height:140%;transform:rotate(10.5deg);background:linear-gradient(90deg,rgba(41,168,224,0),rgba(150,230,255,.85),rgba(41,168,224,0));filter:blur(10px)}
+.hp3-hero-bg .beam{position:absolute;top:-15%;left:50.2%;width:64px;height:140%;transform:rotate(10.5deg);background:linear-gradient(90deg,rgba(41,168,224,0),rgba(180,240,255,.95) 46%,rgba(96,205,255,.55) 58%,rgba(41,168,224,0));filter:blur(6px)}
 .hp3-hero-bg .seam{position:absolute;inset:0;background:linear-gradient(100deg,rgba(4,12,18,.55) 44%,rgba(4,12,18,0) 52%,rgba(4,12,18,0) 58%,rgba(4,12,18,.35) 66%)}
 .hp3-hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,18,.95) 0%,rgba(4,12,18,.90) 27%,rgba(4,12,18,.34) 46%,rgba(4,12,18,.18) 68%,rgba(4,12,18,.45) 100%)}
 .hp3-hero-inner{position:relative;z-index:2;max-width:1500px;margin:0 auto;padding:26px 34px 34px;display:grid;grid-template-columns:37% 63%;gap:24px;align-items:start}
