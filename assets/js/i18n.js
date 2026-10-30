@@ -27,19 +27,25 @@ var REALS_I18N = {"zh": {"Home": "首页", "Battery Protection": "电池保护",
   function build(){
     var host=document.querySelector('.header-actions');
     if(!host) return;
-    var wrap=document.createElement('div');
-    wrap.className='lang-switch';
-    var sel=document.createElement('select');
-    sel.setAttribute('aria-label','Language');
+    var cur=current();
+    var wrap=document.createElement('div'); wrap.className='lang-switch';
+    var btn=document.createElement('button'); btn.type='button'; btn.className='lang-btn';
+    btn.setAttribute('aria-haspopup','true'); btn.setAttribute('aria-expanded','false');
+    btn.innerHTML='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 2.6 15.4 0 18M12 3c-2.6 2.6-2.6 15.4 0 18"/></svg><span class="lang-cur">'+cur.toUpperCase()+'</span><span class="chev"></span>';
+    var menu=document.createElement('div'); menu.className='lang-menu';
     LANGS.forEach(function(p){
-      var o=document.createElement('option'); o.value=p[0]; o.textContent=p[1];
-      if(p[0]===current()) o.selected=true; sel.appendChild(o);
+      var b=document.createElement('button'); b.type='button'; b.className='lang-item'+(p[0]===cur?' on':'');
+      b.innerHTML='<span class="code">'+p[0].toUpperCase()+'</span><span class="name">'+p[1]+'</span>';
+      b.addEventListener('click',function(){ localStorage.setItem(key,p[0]); location.reload(); });
+      menu.appendChild(b);
     });
-    sel.addEventListener('change',function(){
-      localStorage.setItem(key,sel.value);
-      location.reload();
+    wrap.appendChild(btn); wrap.appendChild(menu);
+    btn.addEventListener('click',function(e){
+      e.stopPropagation();
+      var open=wrap.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
     });
-    wrap.appendChild(sel);
+    document.addEventListener('click',function(){ wrap.classList.remove('open'); btn.setAttribute('aria-expanded','false'); });
     host.insertBefore(wrap,host.firstChild);
   }
   document.addEventListener('DOMContentLoaded',function(){
