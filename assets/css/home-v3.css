@@ -6,8 +6,8 @@
 .hp3-hero-bg .l{position:absolute;inset:0 42% 0 0;background:url('../img/app-ev-battery.webp') center/cover no-repeat}
 .hp3-hero-bg .r{position:absolute;inset:0 0 0 58%;background:url('../img/app-assembly.webp') center/cover no-repeat}
 .hp3-hero-bg .beam{position:absolute;top:-20%;left:52%;width:180px;height:150%;transform:rotate(14deg);background:linear-gradient(90deg,rgba(41,168,224,0),rgba(120,220,255,.55),rgba(41,168,224,0));filter:blur(14px)}
-.hp3-hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,18,.94) 0%,rgba(4,12,18,.88) 30%,rgba(4,12,18,.42) 52%,rgba(4,12,18,.30) 72%,rgba(4,12,18,.55) 100%)}
-.hp3-hero-inner{position:relative;z-index:2;max-width:1500px;margin:0 auto;padding:26px 34px 34px;display:flex;justify-content:space-between;gap:30px}
+.hp3-hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,18,.95) 0%,rgba(4,12,18,.90) 27%,rgba(4,12,18,.34) 46%,rgba(4,12,18,.18) 68%,rgba(4,12,18,.45) 100%)}
+.hp3-hero-inner{position:relative;z-index:2;max-width:1500px;margin:0 auto;padding:26px 34px 34px;display:grid;grid-template-columns:39% 61%;gap:24px;align-items:start}
 .hp3-copy{max-width:560px}
 .hp3-h1{font-size:44px;line-height:1.12;font-weight:600;letter-spacing:-.6px;color:#fff}
 .hp3-h1 em{font-style:normal;color:#8ee83f;font-weight:700}
@@ -18,8 +18,8 @@
 .hp3-btn:hover{filter:brightness(1.07)}
 .hp3-ghost{border:1px solid rgba(255,255,255,.55);color:#fff;padding:12px 22px;border-radius:4px;font-size:13px;font-weight:500;text-decoration:none}
 .hp3-ghost:hover{border-color:#8ee83f;color:#8ee83f}
-.hp3-labels{display:flex;gap:0;align-items:flex-start;padding-top:4px}
-.hp3-label{text-decoration:none;color:#fff;padding:0 26px}
+.hp3-hero-right{display:grid;grid-template-columns:58% 42%;align-items:start;padding-top:2px}
+.hp3-label{text-decoration:none;color:#fff;padding:0 0 0 6px;display:block}
 .hp3-label b{display:block;font-size:19px;font-weight:700;letter-spacing:.5px;line-height:1.2}
 .hp3-label span{display:block;font-size:10.5px;color:#cfdde7;margin-top:7px;letter-spacing:.02em;line-height:1.7}
 .hp3-panels{display:grid;grid-template-columns:58% 42%;gap:16px;margin-top:26px}
