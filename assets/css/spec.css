@@ -1,6 +1,7 @@
 /* ===== Spec sheet pages v2: data left, application right ===== */
 .sp{background:#f5f5f0;color:#14202a;font-family:Inter,-apple-system,"Helvetica Neue",Arial,sans-serif;padding:112px 0 70px}
 .sp-wrap{max-width:1460px;margin:0 auto;padding:0 34px;display:grid;grid-template-columns:56% 44%;gap:46px;align-items:start}
+.sp-back{margin:0 0 14px;font-size:12px}.sp-back a{color:#52636e;text-decoration:none}.sp-back a:hover{color:#4f8f1f;text-decoration:underline}
 .sp-kicker{color:#7bc043;font-size:12px;letter-spacing:.22em;font-weight:700;text-transform:uppercase}
 .sp-h1{font-size:34px;font-weight:700;margin-top:12px;letter-spacing:-.3px;color:#0f1a22}
 .sp-cn{font-size:15px;color:#6b7b86;margin-top:8px}
