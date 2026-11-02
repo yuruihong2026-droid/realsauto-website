@@ -1,3 +1,6 @@
 .DS_Store
 .backups/
 .tmp/
+
+# 内部报告与任务书（不进公开仓库）
+reports/
