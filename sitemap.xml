@@ -19,64 +19,46 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.realsauto.com/automotive-fleece-tape.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.realsauto.com/polyester-fabric-tape.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.realsauto.com/pvc-wire-harness-tape.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.realsauto.com/aluminum-foil-fiberglass-tape.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.realsauto.com/automotive-cable-clips-ties.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.realsauto.com/expandable-braided-sleeving.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.realsauto.com/manufacturing.html</loc>
+    <loc>https://www.realsauto.com/blog/index.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.realsauto.com/quality.html</loc>
+    <loc>https://www.realsauto.com/spec-battery-compression-pads.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.realsauto.com/contact.html</loc>
+    <loc>https://www.realsauto.com/spec-battery-insulation-films.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.realsauto.com/automotive-wire-harness-tape-selection-guide.html</loc>
+    <loc>https://www.realsauto.com/spec-battery-insulation-tapes.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.realsauto.com/spec-battery-sealing-gaskets.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.realsauto.com/spec-cable-ties-clips.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.realsauto.com/spec-ly3400-sleeving.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.realsauto.com/spec-ly6512-pvc-tape.html</loc>
@@ -103,39 +85,87 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.realsauto.com/spec-ly3400-sleeving.html</loc>
+    <loc>https://www.realsauto.com/aluminum-foil-fiberglass-tape.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.realsauto.com/spec-cable-ties-clips.html</loc>
+    <loc>https://www.realsauto.com/automotive-cable-clips-ties.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.realsauto.com/spec-battery-insulation-films.html</loc>
+    <loc>https://www.realsauto.com/automotive-fleece-tape.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.realsauto.com/spec-battery-insulation-tapes.html</loc>
+    <loc>https://www.realsauto.com/automotive-wire-harness-tape-selection-guide.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.realsauto.com/spec-battery-compression-pads.html</loc>
+    <loc>https://www.realsauto.com/blog/battery-pack-sealing-materials.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.realsauto.com/spec-battery-sealing-gaskets.html</loc>
+    <loc>https://www.realsauto.com/blog/fleece-tape-vs-fabric-tape.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.realsauto.com/blog/harness-tape-failure-engine-bay.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.realsauto.com/blog/wire-harness-tape-types.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.realsauto.com/contact.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.realsauto.com/expandable-braided-sleeving.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.realsauto.com/manufacturing.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.realsauto.com/polyester-fabric-tape.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.realsauto.com/pvc-wire-harness-tape.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.realsauto.com/quality.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
