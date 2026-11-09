@@ -120,3 +120,7 @@
  .hp3-label b{font-size:16px}
  .hp3-label span{font-size:9.5px}
 }
+
+/* 2026-11-10 GEO: hero 结论句排版（可被 AI 整段引用，不压住右侧图） */
+.hp3-hero .hp3-copy .hp3-p{max-width:500px;font-size:12.6px;line-height:1.62;color:#b9c9d4;text-shadow:0 1px 8px rgba(4,12,18,.85)}
+@media (max-width:760px){.hp3-hero .hp3-copy .hp3-p{max-width:100%;font-size:12.4px}}
