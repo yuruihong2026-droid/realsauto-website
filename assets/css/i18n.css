@@ -11,8 +11,17 @@ html.lang-es .sp-cn,html.lang-pt .sp-cn,html.lang-ru .sp-cn,html.lang-de .sp-cn{
 .lang-btn .chev{width:0;height:0;border-left:3.5px solid transparent;border-right:3.5px solid transparent;border-top:4.5px solid currentColor;margin-left:1px}
 .lang-menu{position:absolute;top:calc(100% + 10px);right:0;min-width:132px;background:#0b1620;border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:6px;display:none;box-shadow:0 18px 40px rgba(0,0,0,.55);z-index:99}
 .lang-switch.open .lang-menu{display:block}
-.lang-item{display:flex;align-items:center;gap:10px;width:100%;background:transparent;border:0;color:#c3d3de;padding:8px 10px;border-radius:5px;cursor:pointer;font-size:12px;font-family:inherit;text-align:left}
+.lang-item{display:flex;align-items:center;gap:10px;width:100%;background:transparent;border:0;color:#c3d3de;padding:8px 10px;border-radius:5px;cursor:pointer;font-size:12px;font-family:inherit;text-align:left;text-decoration:none}
 .lang-item:hover{background:rgba(142,232,63,.12);color:#fff}
 .lang-item.on{color:#8ee83f}
 .lang-item .code{font-size:10.5px;letter-spacing:.08em;width:22px;opacity:.85}
 @media(max-width:700px){.lang-btn{font-size:10.5px}.lang-menu{min-width:118px}}
+
+[dir="rtl"] body{font-family:Tahoma,"Noto Naskh Arabic",Arial,sans-serif}
+[dir="rtl"] .desktop-nav,[dir="rtl"] .header-actions,[dir="rtl"] .hp3-btns,[dir="rtl"] .hp3-phead,[dir="rtl"] .hp3-trust>div{direction:rtl}
+[dir="rtl"] .hp3-copy,[dir="rtl"] .hp3-label,[dir="rtl"] .hp3-phead,[dir="rtl"] .hp3-card,[dir="rtl"] .hp3-app,[dir="rtl"] .site-footer{text-align:right}
+[dir="rtl"] .lang-switch{margin-right:0;margin-left:12px}
+[dir="rtl"] .lang-menu{right:auto;left:0}
+[dir="rtl"] .lang-item{text-align:right}
+[dir="rtl"] .hp3-arrow,[dir="rtl"] .hp3-circ{transform:scaleX(-1)}
+[dir="rtl"] .footer-contact,[dir="rtl"] .footer-company,[dir="rtl"] [dir="ltr"]{direction:ltr;text-align:left}

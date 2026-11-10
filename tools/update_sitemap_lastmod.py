@@ -40,7 +40,10 @@ def last_modified(page: Path) -> str:
 
 def page_for_url(url: str) -> Path:
     route = url.removeprefix(SITE)
-    return ROOT / (route or "index.html")
+    # 目录型 URL（/、/es/、/pt/、/ar/）映射到各自的 index.html
+    if not route or route.endswith("/"):
+        route = route + "index.html"
+    return ROOT / route
 
 
 def generated_sitemap() -> str:
