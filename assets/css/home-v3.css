@@ -10,7 +10,7 @@
 .hp3-hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,18,.98) 0%,rgba(4,12,18,.92) 26%,rgba(4,12,18,.35) 34%,rgba(4,12,18,0) 42%)}
 .hp3-hero-inner{position:relative;z-index:2;max-width:1500px;min-height:318px;box-sizing:border-box;margin:0 auto;padding:26px 34px 34px;display:grid;grid-template-columns:31% 69%;gap:24px;align-items:start}
 .hp3-copy{max-width:452px}
-.hp3-h1{font-size:44px;line-height:1.12;font-weight:600;letter-spacing:-.6px;color:#fff}
+.hp3-h1{font-size:40px;line-height:1.12;font-weight:600;letter-spacing:-.6px;color:#fff}
 .hp3-h1 em{font-style:normal;color:#8ee83f;font-weight:700}
 .hp3-h1sub{font-size:22px;font-weight:600;color:#fff;margin-top:8px;line-height:1.25}
 .hp3-p{font-size:13.5px;color:#c2d2dd;margin-top:14px;max-width:470px;line-height:1.65}
