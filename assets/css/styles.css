@@ -11,6 +11,7 @@
   --paper:#eef2ed;
   --shadow:0 24px 70px rgba(0,0,0,.22);
 }
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--ink);color:var(--white);line-height:1.6;overflow-x:hidden}
@@ -123,3 +124,19 @@ h1{font-size:clamp(42px,4.8vw,82px);line-height:.98;letter-spacing:-.045em;text-
 
 /* Real generated battery concept photo illustrations */
 .reals-product-art img{display:block;width:100%;height:100%;object-fit:cover;border-radius:8px}.rs-battery .rs-products img{aspect-ratio:1.42;object-fit:cover}.rs-battery .rs-products a{position:relative}.rs-battery .rs-products a::after{content:"CONCEPT VISUAL";position:absolute;top:6px;left:6px;font-size:9px;letter-spacing:.05em;color:#f5ffff;background:rgba(2,14,22,.7);padding:3px 5px;border-radius:3px;pointer-events:none}
+
+/* applications */
+.container{width:min(1180px,100%);margin:0 auto}
+.applications-lead{max-width:920px;font-size:17px;color:#46565b;margin:0 0 64px}
+.applications-grid{grid-template-columns:repeat(3,1fr);border-color:rgba(7,19,29,.14);background:#fff}
+.applications-grid .product-card,.applications-products .product-card{color:var(--ink);border-color:rgba(7,19,29,.12);background:#fff}
+.applications-grid .product-card p,.applications-products .product-card p{color:#526167;font-size:13px}
+.applications-products{grid-template-columns:repeat(3,1fr);margin:52px 0;border-color:rgba(7,19,29,.14);background:#fff}
+.applications-products .product-card{min-height:250px}
+.applications-note{margin-top:64px;max-width:850px}.applications-note h2{font-size:34px;line-height:1.15}.applications-note p,.applications-identity{color:#526167}
+.spec-table-wrap{overflow-x:auto;margin:0 0 42px}
+.spec-table{width:100%;border-collapse:collapse;background:#fff;color:var(--ink);font-size:14px}
+.spec-table th,.spec-table td{padding:18px 20px;text-align:left;vertical-align:top;border:1px solid rgba(7,19,29,.14)}
+.spec-table th{background:var(--ink2);color:#fff;text-transform:uppercase;letter-spacing:.08em;font-size:11px}
+.applications-note+.applications-identity,.applications-identity{max-width:900px}
+@media(max-width:760px){.applications-grid,.applications-products{grid-template-columns:1fr}.spec-table{min-width:720px}.applications-lead{margin-bottom:42px}}
